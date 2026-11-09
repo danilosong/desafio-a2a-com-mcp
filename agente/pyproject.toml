@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agente-central-de-salas"
+version = "1.0.0"
+description = "Agente A2A de reserva de salas, host MCP por dentro."
+requires-python = ">=3.10"
+dependencies = [
+    "httpx2==2.14.0",
+    "mcp==2.3.0",
+    "starlette==1.7.0",
+    "uvicorn==0.54.0",
+]
+
+[tool.setuptools]
+py-modules = ["agente", "host_mcp"]

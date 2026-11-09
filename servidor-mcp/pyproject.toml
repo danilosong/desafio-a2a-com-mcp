@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "servidor-mcp-central-de-salas"
+version = "1.0.0"
+description = "Servidor MCP das salas de reuniao da Hill Valley Tech."
+requires-python = ">=3.10"
+dependencies = [
+    "mcp==2.3.0",
+    "uvicorn==0.54.0",
+]
+
+[tool.setuptools]
+py-modules = ["servidor"]
